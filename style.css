@@ -1,6 +1,3 @@
-body {
-  padding: 25px;
-}
 #outputDisplay {
   font-size: 20px;
   font-weight: bold;
@@ -17,4 +14,16 @@ body {
 }
 .winnerNameList {
   text-align: left;
+}
+/* For most modern browsers */
+body {
+  overflow: auto;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+/* Hide scrollbar in WebKit-based browsers like Chrome, Safari, and Edge */
+body::-webkit-scrollbar {
+  display: none;
 }
