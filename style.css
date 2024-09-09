@@ -1,0 +1,20 @@
+body {
+  padding: 25px;
+}
+#outputDisplay {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  height: 80px;
+  background-color: #f0f0f0;
+}
+.giveATry {
+  flex: 0 0 auto;
+  width: 50%;
+  text-align: center;
+}
+.winnerNameList {
+  text-align: left;
+}
