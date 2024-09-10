@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <h1 class="text-center mt-5">Raffle Draw Application</h1>
+      <h1 class="text-center mt-1">Raffle Draw Application</h1>
       <p class="text-center">
         Note: First input the names and then press Enter. After that, the input
         field is become empty, to see the list Please Click the "Show All Names"
@@ -25,12 +25,12 @@
       <div class="row firsthalf">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Enter All Names</label>
+            <label class="mb-1">Enter All Names</label>
             <textarea
               class="form-control"
               id="nameInput"
               rows="8"
-              placeholder="Enter names separated by commas"
+              placeholder="Enter names separated by commas and space(Ex: Emad, Adil, Jamil)"
             >
             </textarea>
           </div>
@@ -68,16 +68,22 @@
           <button class="btn btn-success" id="giveATry">Give A Try</button>
 
           <div class="mt-5 winnerNameList">
-            <h5>First Winner:</h5>
-            <p id="firstWinner"></p>
-            <h5>Second Winner:</h5>
-            <p id="secondWinner"></p>
-            <h5>Third Winner:</h5>
-            <p id="thirdWinner"></p>
+            <h5>First Winner : &nbsp;<span id="firstWinner"></span></h5>
+
+            <h5>Second Winner :&nbsp; <span id="secondWinner"></span></h5>
+
+            <h5>Third Winner : &nbsp;<span id="thirdWinner"></span></h5>
           </div>
         </div>
       </div>
     </main>
+    <footer class="mt-2">
+      <hr />
+      <h4 class="text-center mt-2">
+        Special Thanks to Stack Learner and HM Nayeem
+      </h4>
+      <h3 class="text-center mt-2">Emad Uddin Adil</h3>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

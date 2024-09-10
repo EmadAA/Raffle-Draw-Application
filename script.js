@@ -7,7 +7,7 @@ const  secondWinner =document.getElementById('secondWinner');
 const  thirdWinner =document.getElementById('thirdWinner'); 
 
 const participantsName = [];
-
+inp.value="";
 inp.addEventListener("keypress", function(event){
     if(event.key === "Enter"){
         let newNames = event.target.value.split(", ");
