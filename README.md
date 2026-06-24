@@ -18,7 +18,7 @@ raffle-draw/
 
 ## How to Use
 
-1. Open `index.html` in any modern browser — no server or build step needed.
+1. I have published it to GitHub Pages, so you can open the link in any modern browser — no server or build step needed.
 2. Type participant names in the textarea, separated by commas and a space (e.g. `Emad, Adil, Jamil`), then press **Enter**.
 3. Repeat step 2 as many times as you like to add more batches of names.
 4. Click **Show All Names** to verify the full participant list.
