@@ -7,27 +7,67 @@
   height: 80px;
   background-color: #f0f0f0;
 }
+
 .giveATry {
-  flex: 0 0 auto;
-  width: 50%;
   text-align: center;
 }
+
 .winnerNameList {
   text-align: left;
 }
-/* For most modern browsers */
+
 body {
   overflow: auto;
-  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  scrollbar-width: none;
   box-sizing: border-box;
   padding: 30px;
 }
 
-/* Hide scrollbar in WebKit-based browsers like Chrome, Safari, and Edge */
 body::-webkit-scrollbar {
   display: none;
 }
+
 .link {
   text-decoration: none;
   color: #000;
+}
+
+/* Disabled state for Give A Try button */
+#giveATry:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 767px) {
+  body {
+    padding: 15px;
+  }
+
+  .firsthalf {
+    flex-direction: column;
+  }
+
+  .giveATry {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #outputDisplay {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+    padding: 0 5px;
+  }
+
+  #winnerCount {
+    width: 100% !important;
+  }
 }
