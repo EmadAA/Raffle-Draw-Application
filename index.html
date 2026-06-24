@@ -20,8 +20,6 @@
       </p>
     </header>
     <main>
-      <div class="container mt-5"></div>
-
       <div class="row firsthalf">
         <div class="col-md-6">
           <div class="form-group">
@@ -31,19 +29,33 @@
               id="nameInput"
               rows="8"
               placeholder="Enter names separated by commas and space(Ex: Emad, Adil, Jamil)"
-            >
-            </textarea>
+            ></textarea>
           </div>
+
+          <div class="form-group mt-3">
+            <label class="mb-1" for="winnerCount">Number of Winners</label>
+            <input
+              type="number"
+              class="form-control"
+              id="winnerCount"
+              min="1"
+              max="20"
+              value="3"
+              style="width: 120px;"
+            />
+          </div>
+
           <div>
             <button
-              class="btn btn-primary m-2"
+              class="btn btn-primary mt-2"
               type="button"
+              id="toggleNamesBtn"
               data-bs-toggle="collapse"
               data-bs-target="#collapseExample"
               aria-expanded="false"
               aria-controls="collapseExample"
             >
-              Show All Name
+              Show All Names
             </button>
 
             <div class="collapse my-4" id="collapseExample">
@@ -65,14 +77,19 @@
               readonly
             />
           </div>
-          <button class="btn btn-success" id="giveATry">Give A Try</button>
+
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-2">
+            <button class="btn btn-success" id="giveATry">Give A Try</button>
+            <button class="btn btn-warning" id="resetBtn">New Round</button>
+          </div>
 
           <div class="mt-5 winnerNameList">
-            <h5>First Winner : &nbsp;<span id="firstWinner"></span></h5>
+            <div id="winnerList"></div>
+          </div>
 
-            <h5>Second Winner :&nbsp; <span id="secondWinner"></span></h5>
-
-            <h5>Third Winner : &nbsp;<span id="thirdWinner"></span></h5>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+            <button class="btn btn-secondary" id="copyWinnersBtn">Copy Winners</button>
+            <button class="btn btn-secondary" id="downloadWinnersBtn">Download as TXT</button>
           </div>
         </div>
       </div>
@@ -86,8 +103,7 @@
         class="link"
         href="https://emadaa.github.io/Emad-Uddin-Adil/"
         target="_blank"
-        ><h3 class="text-center mt-2">Emad Uddin Adil</h3></a
-      >
+      ><h3 class="text-center mt-2">Emad Uddin Adil</h3></a>
     </footer>
 
     <script src="script.js"></script>
