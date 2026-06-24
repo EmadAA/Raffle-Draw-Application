@@ -70,4 +70,11 @@ body::-webkit-scrollbar {
   #winnerCount {
     width: 100% !important;
   }
+
+  #toggleNamesBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
 }
